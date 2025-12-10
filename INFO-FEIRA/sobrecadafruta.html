@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Formúlario</title>
+</head>
+
+<body>
+	<header>
+		<h1 id="menu"></h1>
+		<h3>
+			<img src="logo.png" class="logo">
+			<a href="index.html">Home</a>
+			<a href="Frutas.html">Frutas</a> |
+			<a href="legumeseverduras.html">Legumes e Verduras</a> |
+			<a href="sobrecadafruta.html">Formúlario</a> |
+			
+		</h3>
+	</header>
+
+	<main class="Contapragente">
+		<form>
+			<label for="nomeesobrenome">Nome e Sobrenome</label>
+			<input type="text" id="nomeesobrenome" class="input-padrao" required>
+
+			<fieldset>
+				<legend>1. Assinale o seu sexo correspondente:</legend>
+				<label for="sexo-feminino">
+					<input type="radio" name="sexo" value="feminino" id="sexo-feminino"> Feminino
+				</label>
+				<label for="sexo-masculino">
+					<input type="radio" name="sexo" value="masculino" id="sexo-masculino"> Masculino
+				</label>
+				<label for="sexo-outro">
+					Outro:
+					<input type="text" id="sexo-outro" class="input-padrao">
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>2. Assinale sua a faixa etária correspondente:</legend>
+				<label for="idade-18-25"><input type="radio" name="faixa_etaria" value="18-25" id="idade-18-25">18 a 25
+					anos</label>
+				<label for="idade-25-35"><input type="radio" name="faixa_etaria" value="25-35" id="idade-25-35">25 a 35
+					anos</label>
+				<label for="idade-35-45"><input type="radio" name="faixa_etaria" value="35-45" id="idade-35-45">35 a 45
+					anos</label>
+				<label for="idade+45"><input type="radio" name="faixa_etaria" value="+45" id="idade+45">Acima
+					de 45
+					anos</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>3. Você possui algum estilo de alimentação?</legend>
+
+				<label for="estilo-nao">
+					<input type="radio" name="estilo_alimentacao" id="estilo-nao" value="nao"> Não
+				</label>
+
+				<label for="estilo-macrobiotica">
+					<input type="radio" name="estilo_alimentacao" id="estilo-macrobiotica" value="macrobiotica">
+					Macrobiótica (alimentos naturais com pouco ou nenhum processamento)
+				</label>
+
+				<label for="estilo-fitness">
+					<input type="radio" name="estilo_alimentacao" id="estilo-fitness" value="fitness">
+					Fitness (perda de peso ou ganho de massa magra)
+				</label>
+
+				<label for="estilo-lowcarb">
+					<input type="radio" name="estilo_alimentacao" id="estilo-lowcarb" value="low_carb">
+					Low carb (redução de carboidratos)
+				</label>
+
+				<label for="estilo-veganismo">
+					<input type="radio" name="estilo_alimentacao" id="estilo-veganismo" value="veganismo">
+					Veganismo (não consome nada de origem animal)
+				</label>
+
+				<label for="estilo-vegetariano-restrito">
+					<input type="radio" name="estilo_alimentacao" id="estilo-vegetariano-restrito" value="vegetariano_restrito">
+					Vegetariano restrito (não consome nenhum tipo de carne, laticínios ou ovos)
+				</label>
+
+				<label for="estilo-ovolacto">
+					<input type="radio" name="estilo_alimentacao" id="estilo-ovolacto" value="ovolactovegetariano">
+					Ovolactovegetariano (não consome nenhum tipo de carne e consome laticínios e ovos)
+				</label>
+
+				<label for="estilo-lacto">
+					<input type="radio" name="estilo_alimentacao" id="estilo-lacto" value="lactovegetariano">
+					Lactovegetariano (não consome carnes e ovos, e consome laticínios)
+				</label>
+
+				<label for="estilo-outro">
+					Outro:
+					<input type="text" id="estilo-outro" name="estilo_alimentacao_outro" class="input-padrao">
+				</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>4. Qual é, em média, a sua frequência de consumo de hortaliças folhosas? (Alface, chicória, agrião,
+					rúcula, almeirão, couve)</legend>
+
+				<label for="folhosas-nunca">
+					<input type="radio" name="freq_folhosas" id="folhosas-nunca" value="nao_consumo"> Não consumo
+				</label>
+
+				<label for="folhosas-eventual">
+					<input type="radio" name="freq_folhosas" id="folhosas-eventual" value="eventualmente"> Eventualmente
+				</label>
+
+				<label for="folhosas-1ref">
+					<input type="radio" name="freq_folhosas" id="folhosas-1ref" value="1_refeicao_semana"> 1 refeição na semana
+				</label>
+
+				<label for="folhosas-2a3ref">
+					<input type="radio" name="freq_folhosas" id="folhosas-2a3ref" value="2a3_refeicoes_semana"> 2–3 refeições na
+					semana
+				</label>
+
+				<label for="folhosas-4a6ref">
+					<input type="radio" name="freq_folhosas" id="folhosas-4a6ref" value="4a6_refeicoes_semana"> 4–6 refeições na
+					semana
+				</label>
+
+				<label for="folhosas-7a10ref">
+					<input type="radio" name="freq_folhosas" id="folhosas-7a10ref" value="7a10_refeicoes_semana"> 7–10 refeições
+					na semana
+				</label>
+
+				<label for="folhosas-outro">
+					Outro:
+					<input type="text" id="folhosas-outro" name="freq_folhosas_outro" class="input-padrao">
+				</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>5. Qual é, em média, a sua frequência de consumo de hortaliças não folhosas? (cenoura, batata,
+					berinjela, beterraba, tomate, vagem)</legend>
+
+				<label for="nao-folhosas-nunca">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-nunca" value="nao_consumo"> Não consumo
+				</label>
+
+				<label for="nao-folhosas-eventual">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-eventual" value="eventualmente"> Eventualmente
+				</label>
+
+				<label for="nao-folhosas-1ref">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-1ref" value="1_refeicao_semana"> 1 refeição na
+					semana
+				</label>
+
+				<label for="nao-folhosas-2a3ref">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-2a3ref" value="2a3_refeicoes_semana"> 2–3
+					refeições na semana
+				</label>
+
+				<label for="nao-folhosas-4a6ref">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-4a6ref" value="4a6_refeicoes_semana"> 4–6
+					refeições na semana
+				</label>
+
+				<label for="nao-folhosas-7a10ref">
+					<input type="radio" name="freq_nao_folhosas" id="nao-folhosas-7a10ref" value="7a10_refeicoes_semana"> 7–10
+					refeições na semana
+				</label>
+
+				<label for="nao-folhosas-outro">
+					Outro:
+					<input type="text" id="nao-folhosas-outro" name="freq_nao_folhosas_outro" class="input-padrao">
+				</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>6. Qual é, em média, a sua frequência de consumo de frutas?</legend>
+
+				<label for="fruta-nunca">
+					<input type="radio" name="freq_frutas" id="fruta-nunca" value="nao_consumo"> Não consumo
+				</label>
+
+				<label for="fruta-1ref">
+					<input type="radio" name="freq_frutas" id="fruta-1ref" value="1_refeicao_semana"> 1 refeição na semana
+				</label>
+
+				<label for="fruta-2a3ref">
+					<input type="radio" name="freq_frutas" id="fruta-2a3ref" value="2a3_refeicoes_semana"> 2–3 refeições na semana
+				</label>
+
+				<label for="fruta-4a6ref">
+					<input type="radio" name="freq_frutas" id="fruta-4a6ref" value="4a6_refeicoes_semana"> 4–6 refeições na semana
+				</label>
+
+				<label for="fruta-7a10ref">
+					<input type="radio" name="freq_frutas" id="fruta-7a10ref" value="7a10_refeicoes_semana"> 7–10 refeições na
+					semana
+				</label>
+
+				<label for="fruta-outro">
+					Outro:
+					<input type="text" id="fruta-outro" name="freq_frutas_outro" class="input-padrao">
+				</label>
+			</fieldset>
+
+			<button class="Buttonfinal" type="submit">Enviar</button>
+
+		</form>
+	</main>
+
+</body>
+
+</html>
